@@ -1,3 +1,16 @@
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#about{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start
+
+}
 body{
     background-color: rgb(12, 7, 56);
   }
