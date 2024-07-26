@@ -32,12 +32,6 @@
   width: 325px;
   object-fit: fillr;
 }
-#nav:hover{
-  color: #e3c138;
-  font-weight: 900;
-  font-size:medium;
-  
-}
 #about{
 
   display: flex;
