@@ -38,6 +38,29 @@
   font-size:medium;
   
 }
+#about{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start
+
+}
+.contain img{
+  width:200px;
+  height:100px;
+}
+
+#nav:hover{
+  color: #e3c138;
+  font-weight: 900;
+  font-size:medium;
+  
+}
+#p:hover{
+
+  color: #e3c138;
+
+}
 body{
   background-color: rgb(12, 7, 56);
 }
