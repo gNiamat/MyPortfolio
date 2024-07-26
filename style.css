@@ -1,3 +1,20 @@
+.floating-animation {
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, -10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .carousel-container {
   display: flex;
   flex-wrap: wrap;
