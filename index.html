@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        /* Preloader styles */
-        .preloader {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: #0c1a46;
-          overflow: hidden; /* Hide any overflowing content */
-        }
-    
-        
-      </style>
+  <title>My Portfolio</title>
+
+  <style>
+    /* Preloader styles */
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0c1a46;
+      overflow: hidden; /* Hide any overflowing content */
+    }
+
+    /* Logo animation styles */
+    .logo {
+      position: relative;
+      top: -100px; /* Start position above the preloader */
+      width: 600px; /* Adjust the logo size as needed */
+      height: 400px;
+      animation: bounceZoomFade 9s forwards;
+    }
+
+    @keyframes bounceZoomFade {
+      0% { top: -100px; opacity: 0; transform: scale(0.5); }
+      60% { top: -50px; opacity: 1; transform: scale(1.1); }
+      80% { top: -75px; transform: scale(0.9); }
+      100% { top: 0; opacity: 0; transform: scale(2); }
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="preloader">
+    <img class="logo" src="Images\my pic.jpg" alt="Company Logo">
+  </div>
+  
+  <!-- Your page content goes here -->
+  
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.querySelector('.preloader').style.display = 'none';
+        window.location.href = './main.html'; // Redirect to main.html
+      }, 9000); // Change the delay time (in milliseconds) as per your needs
+    });
+  </script>
 </body>
 </html>
