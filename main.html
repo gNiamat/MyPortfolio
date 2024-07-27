@@ -11,6 +11,24 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 </head>
+<style>
+  /* Custom CSS to remove horizontal scrollbar on small screens */
+  @media (max-width: 575.98px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  }
+</style>
 
 <body>
 

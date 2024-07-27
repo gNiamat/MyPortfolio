@@ -15,6 +15,21 @@
     transform: translate(0, 0);
   }
 }
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
 .carousel-container {
   display: flex;
   flex-wrap: wrap;
